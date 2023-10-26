@@ -77,16 +77,18 @@
         align-items: end;
         justify-items: end;
         gap: 27px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #FFF;
+        font-family: Fira Sans Condensed;
     }
     
     .search-form__fieldset {
-        padding-bottom: 4px;
-        padding-left: 15px;
+        padding: 0 12px 4px 16px;
     }
     
     .search-form__fieldset:first-child {
-        padding-bottom: 0;
-        padding-left: 0px;
+        padding: 0;
     }
     
     .search-form__fieldset-title {
@@ -102,40 +104,14 @@
     .search-form__label {
         display: flex;
         align-items: center;
-        min-width: 75px;
+        min-width: 58px;
         width: fit-content;
-        font-size: 18px;
-        font-weight: 400;
         gap: 5px;
+        cursor: pointer;
     }
     
     .search-form__label:has(:focus-visible) {
         border: 1px solid #FFF;
-    }
-    
-    .search-form__checkbox-list .search-form__label:hover {
-        text-decoration: underline;
-    }
-    
-    .search-form__textfield {
-        width: 222px;
-        color: rgba(255, 255, 255, 0.70);
-        font-family: Fira Sans Condensed;
-        font-size: 18px;
-        font-weight: 400;
-        appearance: none;
-        background-color: #1b1919;
-        border-bottom: 1px solid #FFF;
-        border-top: 1px solid #FFF;
-        border-left: none;
-        border-right: none;
-        outline: none;
-        padding-left: 0;
-    }
-    
-    .search-form__checkbox-list {
-        display: flex;
-        flex-direction: row;
     }
     
     .visually-hidden {
@@ -148,38 +124,69 @@
         white-space: nowrap;
     }
     
+    .search-form__textfield {
+        width: 222px;
+        color: currentColor;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        appearance: none;
+        background-color: inherit;
+        border-bottom: 1px solid currentColor;
+        border-top: 1px solid currentColor;
+        border-left: none;
+        border-right: none;
+        outline: none;
+        padding-left: 0;
+    }
+    
+    .search-form__textfield::placeholder {
+        color: rgba(255, 255, 255, 0.70);
+    }
+    
+    .search-form__checkbox-list {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+    
+    .search-form__checkbox-list .search-form__label:hover {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+    }
+    
     .search-form__pseudo-checkbox {
-        border: 1px solid #FFF;
+        border: 1px solid currentColor;
         width: 19px;
         height: 19px;
     }
     
     .search-form__pseudo-checkbox::before {
         content: "";
-        background-color: #FFF;
+        background-color: currentColor;
         position: absolute;
         width: 15px;
         height: 15px;
-        background-color: #1b1919;
+        background-color: inherit;
         margin-top: 1px;
         margin-left: 1px;
     }
     
     input[type="checkbox"]:checked+.search-form__pseudo-checkbox::before {
-        background-color: #FFF;
+        background-color: currentColor;
     }
     
     .search-form__pseudo-checkbox:active::before {
-        background-color: #FFF;
+        background-color: currentColor;
     }
     
     .button {
         background: transparent;
-        color: #FFF;
-        border: 1px solid #FFF;
+        color: currentColor;
+        border: 1px solid currentColor;
         text-align: center;
-        font-family: Fira Sans Condensed;
-        font-size: 18px;
+        font-family: inherit;
+        font-size: inherit;
         font-weight: 700;
     }
     
@@ -196,7 +203,7 @@
     }
     
     button:focus-visible {
-        border: 4px double #FFF;
+        border: 4px double currentColor;
     }
     
     .search-form__submit-button {
@@ -226,6 +233,7 @@
     }
     
     .content__list {
+        width: 399px;
         height: 298px;
         position: relative;
         overflow-y: scroll;
@@ -248,6 +256,7 @@
         font-size: 18px;
         font-weight: 400;
         line-height: 16.2px;
+        padding: 2px;
     }
     
     .content__card-link:active {
@@ -287,7 +296,8 @@
         font-weight: 700;
         line-height: 100%;
         text-transform: uppercase;
-        padding-bottom: 6px;
+        padding-bottom: 4px;
+        padding-top: 4px;
     }
     
     .content__video-card-thumbnail {
