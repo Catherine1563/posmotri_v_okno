@@ -3,10 +3,13 @@
 [Ссылка на макет](https://www.figma.com/design/QHcvX1RsUI89CulRB7HLk6/-4-%D0%9F%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B8-%D0%B2-%D0%BE%D0%BA%D0%BD%D0%BE?node-id=0-1&t=cF4gCSNC5jURg6kN-0)
 
 <img width="1712" height="867" alt="Снимок экрана 2025-08-15 173828" src="https://github.com/user-attachments/assets/e424181c-0a9b-4590-a573-a13d46f2728d" />
+
 ## Что сделано
 * Доработы CSS-файлы в соответствии с макетом
+
 ## Технологии
 * HTML, CSS, JavaScript
+
 ## Иструкция по запуску
 1. Создать папку и перейти в нее
 2. Склонировать этот репозиторий
