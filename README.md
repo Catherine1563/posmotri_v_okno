@@ -1,3 +1,14 @@
-# posmotri_v_okno
-Проект "Посмотри в окно"
-https://github.com/Catherine1563/posmotri_v_okno.git
+# Проект "Посмотри в окно"
+Проект представляет с собой сайт с видео. Данный сайт представляет с собой доработку имеющихся стилей в соответствии с макетом сайта. 
+[Ссылка на макет](https://www.figma.com/design/QHcvX1RsUI89CulRB7HLk6/-4-%D0%9F%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B8-%D0%B2-%D0%BE%D0%BA%D0%BD%D0%BE?node-id=0-1&t=cF4gCSNC5jURg6kN-0)
+## Что сделано
+* Доработы CSS-файлы в соответствии с макетом
+## Технологии
+* HTML, CSS, JavaScript
+## Иструкция по запуску
+1. Создать папку и перейти в нее
+2. Склонировать этот репозиторий
+```
+git clone https://github.com/Catherine1563/posmotri_v_okno.git
+```
+4. Запустить проект
